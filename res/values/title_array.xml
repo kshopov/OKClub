@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="titles">
+        <item>Карта</item>
+        <item>Партньори</item>
+        <item>Промо</item>
+        <item>Около мен</item>
+        <item>Спестено</item>
+    </string-array>
+</resources>
