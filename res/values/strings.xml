@@ -25,5 +25,6 @@
     <string name="activating">Активиране...</string>
     <string name="server_error">В момента не може да бъде осъществена връзка със сървъра. Моля опитайте по-късно</string>
     <string name="wrong_user_data_error">Невалиден email или парола</string>
+    <string name="all">Всички</string>
 
 </resources>

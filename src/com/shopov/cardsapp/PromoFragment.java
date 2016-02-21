@@ -74,9 +74,9 @@ public class PromoFragment extends Fragment implements LocationListener {
 		listCategories = new ArrayList<String>(categories);
 		listSubCategories = new ArrayList<String>(subcategories);
 
-		listCities.add(0, "Всички");
-		listCategories.add(0, "Всички");
-		listSubCategories.add(0, "Всички");
+		listCities.add(0, getString(R.string.all));
+		listCategories.add(0, getString(R.string.all));
+		listSubCategories.add(0, getString(R.string.all));
 
 		locationManager = (LocationManager) getActivity().getSystemService(
 				Context.LOCATION_SERVICE);
@@ -135,9 +135,9 @@ public class PromoFragment extends Fragment implements LocationListener {
 				String category = categoriesSpinner.getSelectedItem().toString();
 				String subCategory = subCategoriesSpinner.getSelectedItem().toString();
 				
-				if (city.equals("Всички")) city = null;
-				if (category.equals("Всички")) category = null;
-				if (subCategory.equals("Всички")) subCategory = null;
+				if (city.equals("пїЅпїЅпїЅпїЅпїЅпїЅ")) city = null;
+				if (category.equals("пїЅпїЅпїЅпїЅпїЅпїЅ")) category = null;
+				if (subCategory.equals("пїЅпїЅпїЅпїЅпїЅпїЅ")) subCategory = null;
 				
 				organisationsList.removeAll(organisationsList);
 				organisationsList.addAll(app.getDataManager().getPromoOrganisations(city, category, subCategory));

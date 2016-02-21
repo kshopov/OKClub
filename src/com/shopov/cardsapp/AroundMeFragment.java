@@ -42,7 +42,7 @@ public class AroundMeFragment extends Fragment implements LocationListener {
 	private static final int GPS_ERRORDIALOG_REQUEST = 9001;
 	private String mContent = "TEST FRAGMENT";
 
-	private String[] distances = { "0.5êì", "1êì", "2êì", "2êì+" };
+	private String[] distances = { "0.5ÐºÐ¼", "1ÐºÐ¼", "2ÐºÐ¼", "2ÐºÐ¼+" };
 	private CardsApp app = null;
 	private List<Organisation> organisationsList = new ArrayList<Organisation>();
 	private HashSet<String> categories = new HashSet<String>();
@@ -86,8 +86,8 @@ public class AroundMeFragment extends Fragment implements LocationListener {
         listCategories = new ArrayList<String>(categories);
         listSubCategories = new ArrayList<String>(subcategories);
         
-        listCategories.add(0, "Âñè÷êè");
-        listSubCategories.add(0, "Âñè÷êè");
+        listCategories.add(0, getString(R.string.all));
+        listSubCategories.add(0, getString(R.string.all));
 
 		locationManager = (LocationManager) getActivity().getSystemService(
 				Context.LOCATION_SERVICE);
